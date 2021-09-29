@@ -38,7 +38,7 @@ const square = function (number) {
 
 // ES6 way
 const square2 = number => number * number;
-console.log(square2(5));
+// console.log(square2(5));
 
 const jobs = [
     { id: 1, isActive: true },
@@ -47,7 +47,19 @@ const jobs = [
 ];
 
 const activeJobs = jobs.filter(function (job) { return job.isActive; });
-const activeJobs = jobs.filter(job => job.isActive);
+const activeJobs2 = jobs.filter(job => job.isActive);
+
+
+// ARRAY.map()
+const colors = ['red', 'green', 'blue'];
+// old way
+const items = colors.map(function (color) {
+    return '<li>' + color + '</li>';
+});
+
+// ES6 way
+const items2 = colors.map(color => `<li>${color}</li>`);
+console.log(items2);
 
 
 // OBJECT DESTRUCTURING
