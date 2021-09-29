@@ -1,4 +1,5 @@
 // VAR, LET, CONST
+
 // var -> function scope
 // let -> block scope
 // const -> block scope
@@ -13,6 +14,20 @@ sayHello();
 
 const x = 1;
 x = 2; // reassign is not possible
+
+
+// OBJECT
+const person = {
+    name: 'Rimon',
+    walk() { },
+    talk() { }
+};
+
+person.talk();
+person.name = '';
+
+const targetMember = 'name';
+person[targetMember.value] = 'Kabir';
 
 
 // OBJECT DESTRUCTURING
