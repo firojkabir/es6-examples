@@ -24,5 +24,12 @@ const second = [4, 5, 6];
 const combined = [...first, 'a', ...second, 'b']; // possible to insert new elements
 
 const clone = [...first];
-console.log(first);
-console.log(combined);
+// console.log(first);
+// console.log(combined);
+
+// SPREAD OPERATOR in OBJECTS
+const name = { name: 'Rimon' };
+const status = { occupation: 'Student' };
+
+const addThem = { ...name, ...status, location: 'Germany' };
+console.log(addThem)
