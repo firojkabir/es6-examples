@@ -1,3 +1,13 @@
+// VAR, LET, CONST
+function sayHello() {
+    for (var i = 0; i < 5; i++) {
+        console.log(i)
+    }
+}
+
+sayHello();
+
+
 // OBJECT DESTRUCTURING
 const address = {
     street: '',
@@ -43,7 +53,7 @@ class Person {
     }
 
     walk() {
-        console.log("walk");
+        // console.log("walk");
     }
 }
 
@@ -54,7 +64,7 @@ class Teacher extends Person {
     }
 
     teach() {
-        console.log("teach")
+        // console.log("teach")
     }
 }
 
