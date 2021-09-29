@@ -5,15 +5,15 @@
 // const -> block scope
 function sayHello() {
     for (let i = 0; i < 5; i++) {
-        console.log(i)
+        // console.log(i)
     }
     // console.log(i)
 }
 
 sayHello();
 
-const x = 1;
-x = 2; // reassign is not possible
+// const x = 1;
+// x = 2; // reassign is not possible
 
 
 // OBJECT
@@ -28,6 +28,26 @@ person.name = '';
 
 const targetMember = 'name';
 person[targetMember.value] = 'Kabir';
+
+
+// ARROW FUNCTIONS
+// old way
+const square = function (number) {
+    return number * number;
+}
+
+// ES6 way
+const square2 = number => number * number;
+console.log(square2(5));
+
+const jobs = [
+    { id: 1, isActive: true },
+    { id: 2, isActive: true },
+    { id: 3, isActive: false },
+];
+
+const activeJobs = jobs.filter(function (job) { return job.isActive; });
+const activeJobs = jobs.filter(job => job.isActive);
 
 
 // OBJECT DESTRUCTURING
