@@ -1,8 +1,12 @@
 // VAR, LET, CONST
+// var -> function scope
+// let -> block scope
+// const -> block scope
 function sayHello() {
-    for (var i = 0; i < 5; i++) {
+    for (let i = 0; i < 5; i++) {
         console.log(i)
     }
+    console.log(i)
 }
 
 sayHello();
