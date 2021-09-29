@@ -14,6 +14,7 @@ const country = address.country;
 // const { street, city, country } = address;
 const { street: st } = address; // change the 'street' property by 'st' using allias 
 
+
 // SPREAD OPERATOR
 const first = [1, 2, 3];
 const second = [4, 5, 6];
@@ -32,4 +33,30 @@ const name = { name: 'Rimon' };
 const status = { occupation: 'Student' };
 
 const addThem = { ...name, ...status, location: 'Germany' };
-console.log(addThem)
+// console.log(addThem)
+
+
+// INHERITANCE
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+
+    walk() {
+        console.log("walk");
+    }
+}
+
+class Teacher extends Person {
+    constructor(name, degree) {
+        super(name);
+        this.degree = degree;
+    }
+
+    teach() {
+        console.log("teach")
+    }
+}
+
+const teacher = new Teacher("Rimon", "MSc");
+
